@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Actions Authentication</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e2e;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            background: #282a36;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h1 {
+            color: #ff79c6;
+        }
+        ol {
+            text-align: left;
+        }
+        li {
+            margin: 10px 0;
+        }
+        .highlight {
+            background: #44475a;
+            padding: 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            display: inline-block;
+            color: #50fa7b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub Actions Authentication</h1>
+        <p>GitHub Actions ek automation tool hai jo aapke workflows ko automate karne me madad karta hai.</p>
+        <h2>Steps for Authentication</h2>
+        <ol>
+            <li>GitHub pe ek <span class="highlight">Personal Access Token (PAT)</span> generate karo.</li>
+            <li>Repository ke <span class="highlight">Secrets</span> me token ko add karo.</li>
+            <li>YAML workflow file me <span class="highlight">secrets.GITHUB_TOKEN</span> ka use karo.</li>
+        </ol>
+    </div>
+</body>
+</html>
