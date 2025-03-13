@@ -1,0 +1,19 @@
+name: setup local env variable
+on:
+ push:
+  branches:
+   - mian 
+   
+env:
+ my_first-env: "my name is ayush i am prectice the github action envroment cvariable"
+
+
+jobs:
+ print_env_variable:
+   runs-on: ubuntu-latest
+
+   steps:
+    - run: echo "suceefully print the envorment variable $my_first-env"
+     
+
+
