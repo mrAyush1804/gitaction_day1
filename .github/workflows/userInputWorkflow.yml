@@ -1,0 +1,24 @@
+name: User Input Example
+on:
+ workflow_dispatch:
+  inputs:
+    user_name:
+     description: 'Aapka naam kya hai?'
+     required: true
+     default: 'Anonymous'
+    user_choise:
+       description: 'Aapka naam kya hai?'
+       required: false
+       default: 'Anonymous'
+jobs:
+ print_user:
+  runs-on: ubuntu-latest
+  steps:
+   - name: User input print karo
+     run: | 
+      echo "User ka naam: ${{ github.event.inputs.user_name }}"
+      echo "User ka color: ${{ github.event.inputs.user_choice }}"
+      
+ 
+   
+   
