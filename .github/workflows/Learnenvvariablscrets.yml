@@ -10,6 +10,6 @@ jobs:
 
   steps:
     - name: "Say hellw to $username"
-      run: echo "Hii my name is $username ${{vargs.FIRST_NAME}}"
+      run: echo "Hii my name is $username ${{vars.FIRST_NAME}}"
     
  
