@@ -1,15 +1,13 @@
-name: Learnig githubaction topic Envorment variable
+name: Learning GitHub Action Topic Environment Variable
 on:
- workflow_dispatch:
+  workflow_dispatch:
 jobs:
- Topic:
-  runs-on: ubuntu-latest
-
-  env:
-   username: Ayush18
-
-  steps:
-    - name: "Say hellw to $username"
-      run: echo "Hii my name is $username ${{vars.FIRST_NAME}}"
+  Topic:
+    runs-on: ubuntu-latest
+    env:
+      username: Ayush18
+    steps:
+      - name: "Say hello to $username"
+        run: echo "Hii my name is $username ${{ vars.FIRST_NAME }}"
     
  
