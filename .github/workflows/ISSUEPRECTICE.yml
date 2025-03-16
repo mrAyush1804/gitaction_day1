@@ -2,6 +2,8 @@ name: Comment on New Issue with Condition
 on:
   issues:
     types: [opened]
+permissions:  # Yeh line add karo
+  issues: write  
 jobs:
   comment:
     runs-on: ubuntu-latest
